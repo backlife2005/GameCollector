@@ -38,4 +38,15 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBAction func addTapped(_ sender: Any) {
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        gameImageView.image = image
+        
+        imagePicker.dismiss(animated: true, completion: nil)
+        
+        
+    }
+    
 }
