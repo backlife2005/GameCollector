@@ -28,6 +28,11 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
 
     @IBAction func photosTapped(_ sender: Any) {
+        
+        imagePicker.sourceType = .photoLibrary
+        
+        present(imagePicker, animated: true, completion: nil)
+        
     }
     
     @IBAction func addTapped(_ sender: Any) {
