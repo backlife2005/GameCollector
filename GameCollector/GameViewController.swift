@@ -8,18 +8,20 @@
 
 import UIKit
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
     @IBOutlet weak var gameImageView: UIImageView!
     
     @IBOutlet weak var titleTextField: UITextField!
     
+    var imagePicker = UIImagePickerController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imagePicker.delegate = self
     }
 
     @IBAction func cameraTapped(_ sender: Any) {
