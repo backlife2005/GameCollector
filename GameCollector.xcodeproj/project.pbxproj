@@ -13,6 +13,7 @@
 		F730976F1E6064F7006EFC44 /* GameCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F730976D1E6064F7006EFC44 /* GameCollector.xcdatamodeld */; };
 		F73097711E6064F7006EFC44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73097701E6064F7006EFC44 /* Assets.xcassets */; };
 		F73097741E6064F7006EFC44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73097721E6064F7006EFC44 /* LaunchScreen.storyboard */; };
+		F730977C1E607442006EFC44 /* Cool.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F730977B1E607442006EFC44 /* Cool.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F73097701E6064F7006EFC44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73097731E6064F7006EFC44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F73097751E6064F7006EFC44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F730977B1E607442006EFC44 /* Cool.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cool.jpg; path = ../../../../Downloads/Cool.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		F73097651E6064F7006EFC44 /* GameCollector */ = {
 			isa = PBXGroup;
 			children = (
+				F730977B1E607442006EFC44 /* Cool.jpg */,
 				F73097661E6064F7006EFC44 /* AppDelegate.swift */,
 				F73097681E6064F7006EFC44 /* ViewController.swift */,
 				F730976A1E6064F7006EFC44 /* Main.storyboard */,
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F730977C1E607442006EFC44 /* Cool.jpg in Resources */,
 				F73097741E6064F7006EFC44 /* LaunchScreen.storyboard in Resources */,
 				F73097711E6064F7006EFC44 /* Assets.xcassets in Resources */,
 				F730976C1E6064F7006EFC44 /* Main.storyboard in Resources */,
