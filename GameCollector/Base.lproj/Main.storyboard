@@ -35,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="1063" y="129"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="g0P-Jh-sbc">
             <objects>
-                <viewController id="pSh-K8-M26" sceneMemberID="viewController">
+                <viewController id="pSh-K8-M26" customClass="GameViewController" customModule="GameCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pRj-ZV-202"/>
                         <viewControllerLayoutGuide type="bottom" id="flI-k4-VCk"/>
@@ -54,7 +54,7 @@
                                     <constraint firstAttribute="height" constant="180" id="lLc-Sm-B5A"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="916-hR-FCv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="916-hR-FCv">
                                 <rect key="frame" x="47.5" y="284" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -78,8 +78,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="ICf-i1-KAJ">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="q9v-dP-VuL"/>
-                            <barButtonItem title="Photos" id="hn7-nS-cXV"/>
+                            <barButtonItem systemItem="camera" id="q9v-dP-VuL">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="pSh-K8-M26" id="ZZ4-Ye-uUb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="hn7-nS-cXV">
+                                <connections>
+                                    <action selector="photosTapped:" destination="pSh-K8-M26" id="zZN-Kp-k2M"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
