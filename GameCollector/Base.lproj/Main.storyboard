@@ -63,6 +63,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbw-Zm-gVK">
                                 <rect key="frame" x="172" y="334" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="pSh-K8-M26" eventType="touchUpInside" id="dHD-J3-Umd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,6 +93,10 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="gameImageView" destination="YbJ-Rr-Ido" id="atc-ei-0eb"/>
+                        <outlet property="titleTextField" destination="916-hR-FCv" id="nKT-tM-KtZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFP-6T-XPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
