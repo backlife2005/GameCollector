@@ -9,7 +9,7 @@
 import UIKit
 
 class GameViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
     
     @IBOutlet weak var gameImageView: UIImageView!
     
@@ -28,10 +28,11 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         imagePicker.delegate = self
         
         if game != nil {
+            
             print("We have a game")
             
             gameImageView.image = UIImage (data: game!.image as! Data)
@@ -51,10 +52,10 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             
         }
     }
-
+    
     @IBAction func cameraTapped(_ sender: Any) {
     }
-
+    
     @IBAction func photosTapped(_ sender: Any) {
         
         imagePicker.sourceType = .photoLibrary
@@ -65,13 +66,23 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBAction func addTapped(_ sender: Any) {
         
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        
-        let game = Game (context: context)
-        
-        game.title = titleTextField.text
-        
-        game.image = UIImagePNGRepresentation(gameImageView.image!) as NSData?
+        if game != nil {
+            
+            game!.title = titleTextField.text
+            
+            game!.image = UIImagePNGRepresentation(gameImageView.image!) as NSData?
+            
+        } else {
+            
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            
+            let game = Game (context: context)
+            
+            game.title = titleTextField.text
+            
+            game.image = UIImagePNGRepresentation(gameImageView.image!) as NSData?
+            
+        }
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
