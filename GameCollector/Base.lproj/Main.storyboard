@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="wdC-86-Jl7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Qjz-xn-spT">
                             <connections>
-                                <segue destination="pSh-K8-M26" kind="show" id="1Ts-dO-TNO"/>
+                                <segue destination="pSh-K8-M26" kind="show" identifier="gameSegue" id="1Ts-dO-TNO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
