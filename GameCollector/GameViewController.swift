@@ -48,12 +48,14 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             
             deleteButton.isHidden = true
             
-            
-            
         }
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
+        
+        imagePicker.sourceType = .camera
+        
+        present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func photosTapped(_ sender: Any) {

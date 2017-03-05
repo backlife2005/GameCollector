@@ -105,6 +105,7 @@
 				TargetAttributes = {
 					F73097621E6064F7006EFC44 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9H7SMYEZH5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -270,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9H7SMYEZH5;
 				INFOPLIST_FILE = GameCollector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.backlife2005.GameCollector;
@@ -282,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9H7SMYEZH5;
 				INFOPLIST_FILE = GameCollector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.backlife2005.GameCollector;
