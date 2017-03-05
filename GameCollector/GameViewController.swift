@@ -98,7 +98,17 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         imagePicker.dismiss(animated: true, completion: nil)
         
-        
     }
+    
+    @IBAction func deleteTapped(_ sender: Any) {
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        context.delete(game!)
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        navigationController!.popToRootViewController(animated: true)
+    }
+    
     
 }

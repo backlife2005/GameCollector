@@ -53,7 +53,7 @@
         <!--Game View Controller-->
         <scene sceneID="g0P-Jh-sbc">
             <objects>
-                <viewController id="pSh-K8-M26" customClass="GameViewController" customModule="GameCollector" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pSh-K8-M26" customClass="GameViewController" customModule="GameCollector" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pRj-ZV-202"/>
                         <viewControllerLayoutGuide type="bottom" id="flI-k4-VCk"/>
@@ -87,6 +87,7 @@
                                 <state key="normal" title="Delete"/>
                                 <connections>
                                     <action selector="addTapped:" destination="pSh-K8-M26" eventType="touchUpInside" id="P8u-wy-ppz"/>
+                                    <action selector="deleteTapped:" destination="pSh-K8-M26" eventType="touchUpInside" id="byd-9W-IUg"/>
                                 </connections>
                             </button>
                         </subviews>
