@@ -82,13 +82,22 @@
                                     <action selector="addTapped:" destination="pSh-K8-M26" eventType="touchUpInside" id="dHD-J3-Umd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLQ-FI-azf">
+                                <rect key="frame" x="165" y="374" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="pSh-K8-M26" eventType="touchUpInside" id="P8u-wy-ppz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YbJ-Rr-Ido" firstAttribute="top" secondItem="pRj-ZV-202" secondAttribute="bottom" constant="20" id="0rm-Fh-QPG"/>
+                            <constraint firstItem="pLQ-FI-azf" firstAttribute="centerX" secondItem="hAG-oj-mqa" secondAttribute="centerX" id="6Jl-73-p0q"/>
                             <constraint firstItem="wbw-Zm-gVK" firstAttribute="top" secondItem="916-hR-FCv" secondAttribute="bottom" constant="20" id="JCy-XV-BHr"/>
                             <constraint firstItem="916-hR-FCv" firstAttribute="centerX" secondItem="hAG-oj-mqa" secondAttribute="centerX" id="Jfu-DS-Ix3"/>
                             <constraint firstItem="916-hR-FCv" firstAttribute="width" secondItem="YbJ-Rr-Ido" secondAttribute="width" id="QGR-Rb-fu6"/>
+                            <constraint firstItem="pLQ-FI-azf" firstAttribute="top" secondItem="wbw-Zm-gVK" secondAttribute="bottom" constant="10" id="QPM-AL-fxd"/>
                             <constraint firstItem="YbJ-Rr-Ido" firstAttribute="centerX" secondItem="hAG-oj-mqa" secondAttribute="centerX" id="Wf2-mn-5aL"/>
                             <constraint firstItem="wbw-Zm-gVK" firstAttribute="centerX" secondItem="hAG-oj-mqa" secondAttribute="centerX" id="fFP-Ct-RW5"/>
                             <constraint firstItem="916-hR-FCv" firstAttribute="top" secondItem="YbJ-Rr-Ido" secondAttribute="bottom" constant="20" id="iCV-aZ-qUh"/>
@@ -110,6 +119,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addUpdateButton" destination="wbw-Zm-gVK" id="3jm-8e-wPz"/>
+                        <outlet property="deleteButton" destination="pLQ-FI-azf" id="lop-KY-jN4"/>
                         <outlet property="gameImageView" destination="YbJ-Rr-Ido" id="atc-ei-0eb"/>
                         <outlet property="titleTextField" destination="916-hR-FCv" id="nKT-tM-KtZ"/>
                     </connections>

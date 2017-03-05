@@ -18,6 +18,9 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var addUpdateButton: UIButton!
     
     
+    @IBOutlet weak var deleteButton: UIButton!
+    
+    
     var imagePicker = UIImagePickerController()
     
     var game : Game? = nil
@@ -41,6 +44,10 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         } else {
             
             print("We dont have a game")
+            
+            deleteButton.isHidden = true
+            
+            
             
         }
     }
