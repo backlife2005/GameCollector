@@ -23,8 +23,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableView.delegate = self
         
-
-
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -109,6 +109,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="wbw-Zm-gVK" id="3jm-8e-wPz"/>
                         <outlet property="gameImageView" destination="YbJ-Rr-Ido" id="atc-ei-0eb"/>
                         <outlet property="titleTextField" destination="916-hR-FCv" id="nKT-tM-KtZ"/>
                     </connections>
